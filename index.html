@@ -11,12 +11,14 @@
     <header class="nav-bar">
         <div class="logo"> <img src="images/IMG_1706.JPG.jpeg" alt="logo">
         </div>
+        <button class="menu-toggle" id="menu-tggle" aria-label="toggle Navigation"><i class="fas fa-bars"></i></button>
 
         
-        <nav class="nav-links">
-             <a href="#" class="highl">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact us</a>
+        <nav class="nav-links" id="nav-link">
+            <button class="close-btn" id="close-btn" aria-label="Close Navigation"><i class="fas fa-times"></i></button>
+             <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact us</a>
         </nav>
     </header>
     <body>
@@ -25,14 +27,14 @@
                 <h1 class="greeting">Hello</h1>
                 <h1 class="hero-t">I'm <span class="highl">Kyrian Chidiogo</span></h1>
                 <h1>Front End Developer</h1>
-                <p class="descr">I enjoy creating <span class="highl">interactive</span> digital experiences for web currently in Nigeria</p>
+                <p class="descr">Focused on crafting <span class="highl">intuitive</span> user interfaces, clean component structures, and responsive layouts that deliver exeptional web experiences across all devices</p>
                 <button class="btn">Let's connect!</button>
                  </div>
                  <div class="hero-img">
                     <img src="images/26760925_2112.i301.031.S.m004.c13.UI and UX designers concepts isometric composition.svg" alt="Your Image">
                 </div>
         </section>
-        <section class="about-sec">
+        <section class="about-sec" id="about">
             <div class="profile-card">
                 <div class="prof-avatar">
                     <img src="images/IMG_0281.JPG" alt="kyrian profile">
@@ -42,30 +44,31 @@
 
                 <ul class="prof-info">
                     <li><span>Email:</span>benkay599@gmail.com</li>
-                    <li><span>Location</span>Enugu, Nigeria</li>
+                    <!-- <li><span>Location</span>Enugu, Nigeria</li> -->
                     <li><span>Phone</span>+2348023716031</li>
-                    <li><span>Birth-day</span>August 31, 2003</li>
+                    <!-- <li><span>Birth-day</span>August 31, 2003</li> -->
 
                 </ul>
 
                 <div class="prof-soci">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://linkedin.com"target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    
+                    <a href="https://github.com/Diogokyrian" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com"target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                 </div>
                </div>
                <div class="about-detail">
                 <h2>About <span class="highl">me</span></h2>
                 <p class="bio-text">
                    I build responsive, user-focused websites and web apps that look great and work even better.
-                    I specialize in modern frontend frameworks and clean backend code to turn ideas into products that solve real problems. 
+                    I specialize in modern frontend designs that turns ideas into products that solve real problems. 
                     Always learning, always shipping.
                 </p>
                 <h3>Skills and <span class="highl">Tools</span></h3>
                 <div class="skills-row">
-                    <div class="skill-circle">PYTHON</div>
-                    <div class="skill-circle">DJANGO</div>
+                    <!-- <div class="skill-circle">PYTHON</div> -->
+                    <div class="skill-circle">JAVA</div>
                     <div class="skill-circle">GITHUB</div>
                     <div class="skill-circle">HTML</div>
                     <div class="skill-circle">CSS</div>
@@ -115,8 +118,8 @@
             </div>
         </div>
                </div>
-        </section>
-        <section class="exp-sec">
+        <!-- </section> -->
+        <!-- <section class="exp-sec">
             <div class="sec-title">
                 <h2><span class="highl">My</span> Experiences</h2>
                 <p>A brief timeline of my professional journey and software development roles</p>
@@ -166,8 +169,8 @@
                         <h4>Backend and Frontend Developer</h4>
                         <p>Designing and deploying REST APIs using Django REST Framework and python in linux/WSL environments</p>
                     </div>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
         </section>
         <section class="cta-banner">
             <div class="cta-cont">
@@ -178,10 +181,11 @@
             </div>
             <div class="cta-footer">
                 <div class="cta-socials">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                     <a href="https://twitter.com" target="_blank" rel="noopener noreferre"><i class="fab fa-twitter"></i></a>
+                    <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+                    
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                 </div>
                 <p class="credit">Designed by Kyrian Chidiogo .benkay599@gmail.com </p>
             </div>
@@ -213,10 +217,10 @@
             </div>
         </section>
 
-        <section class="pro-feat">
+        <section class="pro-feat" id="project">
             <div class="feat-cont">
                 <div class="feat-txt">
-                    <h2><span class="highl">About</span>Projects</h2>
+                    <h2><span class="highl">PROJECTS</span></h2>
                     <P>
                         A featured web application built to solve real-world problems. 
                         Designed with modern layouts, clean UI components, and fully responsive 
@@ -256,12 +260,12 @@
                 </div>
                 <div class="footer-soc">
                     <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                      <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </footer>
-
+           <script src="index.js"></script>
 
         
     </body>

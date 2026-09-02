@@ -1,4 +1,14 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x:hidden;
+}
 .nav-links{
       display: flex;
       gap: 3rem;
@@ -31,7 +41,8 @@ img{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    min-height: 60vh;
+    min-height: 85vh;
+    
     
     
 
@@ -125,6 +136,19 @@ img{
     text-align: left;
     font-size: 0.85rem;
     color: #94a3b8;
+}
+.prof-soci{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.prof-soci a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .prof-info li{
     display: flex;
@@ -530,8 +554,13 @@ a{
 .port-footer{
     background-color: #0b0c10;
     border-top: 1px solid #1f2438;
-    padding: 2rem 8%;
+    padding: 1.5rem 2rem;
     color: #94a3b8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .footer-cont{
     display: flex;
@@ -539,6 +568,9 @@ a{
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 .copyright{
     font-size: 0.9rm;
@@ -557,6 +589,9 @@ a{
 .footer-soc a:hover{
     color: #f7a01d;
 }
+.menu-toggle, .close-btn{
+    display: none;
+}
 
 @media(max-width: 480px) and (max-width: 720px){
     .contact-cont{
@@ -567,7 +602,7 @@ a{
         flex-direction: column;
         text-align: center;
         gap: 2rem;
-        align-items: flex-start;
+        align-items: center;
     }
     .cta-footer{
         flex-direction: column;
@@ -589,7 +624,7 @@ a{
         align-items: flex-start;
     }
     .cont{
-        align-items: flex-start;
+        align-items: center;
     }
     .profile-card{
         width: 100%;
@@ -610,7 +645,11 @@ a{
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        padding: 1rem;
+        padding: 1rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
 
     }
     .nav-links{
@@ -620,8 +659,14 @@ a{
         width: 100%;
         align-items: flex-start;
     }
-    .nav-links a{
+    .nav-links a, #nav-link a{
         white-space: nowrap;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
     }
     .project-grid{
         flex-direction: column;
@@ -638,6 +683,102 @@ a{
         gap: 1rem;
         text-align: center;
     }
+   
+    .contact-visual img{
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        object-fit: contain;
+        display:block ;
+    }
+    .contact-cont,
+    .contact-sec{
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .contact-visual{
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-toggle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#1a1e36;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 14px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        margin-left: auto;
 
+    }
+    .nav-links,#nav-link{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #0d0f17;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        z-index: 9999;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        align-items: center;
+    }
+    .nav-links .active,#nav-link.active{
+        transform: translateY(0);
+
+    }
+    .close-btn{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    
+    .greeting, .hero-sec h3{
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: 1px;
+        
+    }
+      .hero-t, .hero-sec h1{
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin-bottom: 0.6rem;
+      }
+      .descr, .hero-sec p{
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 310px;
+        margin: 0 auto 1.8rem auto;
+      }
+      .hero-sec button, .hero-sec .btn{
+        margin-top: 0.5rem;
+        padding: 0.75rem 1.8rem;
+      }
+      .hero-sec .cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto ;
+      }
 }
 
