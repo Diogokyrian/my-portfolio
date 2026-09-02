@@ -41,7 +41,7 @@ img{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    min-height: 85vh;
+    min-height: 100vh;
     
     
     
@@ -642,7 +642,7 @@ a{
         align-items: flex-start;
     }
     .nav-bar{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 1rem;
         padding: 1rem 1.5rem;
@@ -651,6 +651,12 @@ a{
         width: 100%;
         box-sizing: border-box;
 
+    }
+    .logo,.logo img{
+        height:40px;
+        width:auto;
+        display:flex;
+        align-items:center;
     }
     .nav-links{
         display: flex;
